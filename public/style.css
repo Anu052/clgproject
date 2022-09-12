@@ -64,48 +64,72 @@ button:disabled {
 }
 
 .sidebar {
-    height: 100vh;
-    color: rgb(36, 32, 32);
-    background: #aab473;
+    height: 550px;
+    color: white;
+    background: #23241e;
     width: 225px;
-    overflow-y: scroll
+    overflow-y: scroll;
+    margin-top: 30px;
 }
-
+.container
+{
+    border-radius: 7px;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin: 30px auto;
+    background-color: #0070CC;
+    border: 3px solid #0070CC;
+}
+body h1{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+}
+body{
+    background-color: #23241e;
+}
 /* Chat styles */
 
 .chat__main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    max-height: 590px;
 }
 
 .chat__messages {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
-    overflow-y: scroll;
+    overflow: auto;
+    background-color: #93b4d0;
+    margin-top: 30px;
 }
 
 /* Message Styles */
 
 .message {
     margin-bottom: 16px;   
+ 
 }
 
 .message__name {
     font-weight: 600;
     font-size: 14px;
     margin-right: 8px;
+  
 }
 
 .message__meta {
     color: #777;
     font-size: 14px;
+   
 }
 
 .message a {
     color: #0070CC;
 }
+
 
 /* Message Composition Styles */
 
@@ -137,7 +161,7 @@ button:disabled {
 /* Join Page Styles */
 
 .join-form {
-    background: #aab473;
+    background-image: linear-gradient(rgb(255,255,255),rgb(41,168,129));
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -151,6 +175,7 @@ button:disabled {
     padding: 24px;
     width: 450px;
     height: 350px;
+   border-radius: 4px;
 }
 
 .join-form button {
@@ -167,7 +192,7 @@ button:disabled {
 .room-title {
     font-weight: 400;
     font-size: 22px;
-    background: #1507e0;
+    background: #79ab89;
     color: #fff;
     padding: 24px;   
 }
@@ -183,4 +208,11 @@ button:disabled {
     list-style-type: none;
     font-weight: 800;
     padding: 12px 24px 0 24px;
+}
+
+@media (max-width: 700px) {
+    .join-form__box{
+        display: block;
+        background-color: #0070CC;
+    }
 }

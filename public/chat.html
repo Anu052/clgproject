@@ -3,8 +3,11 @@
 <head>
     <title>Chat App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 </head>
 <body>
+    <h1 class="font-effect-fire">Let's Chat</h1>
+    <div class="container">
     <div class="chat">
         <div class="sidebar"></div>
         <div class="chat__main">
@@ -31,7 +34,7 @@
 
     <script id="sidebar-template" type="text/html">
         <h2 class="room-title">{{room}}</h2>
-        <h3 class="list-title">Users</h3>
+        <h3 class="list-title">Online Users</h3>
         <ul class="users">
             {{#users}}
                 <li>{{username}}</li>
@@ -44,5 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/main.js"></script>
+    
+    </div>
 </body>
 </html>
